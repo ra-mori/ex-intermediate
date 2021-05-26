@@ -1,0 +1,37 @@
+/* team-list */
+.teamlist {
+  margin-bottom: 15px;
+  margin-left: 30px;
+  list-style: none;
+}
+
+
+/* team-detail */
+.heading {
+  margin-bottom: 0px;
+  font-size: large;
+  font-weight: bold;
+}
+
+.paragraph {
+  margin-top: 0px;
+}
+
+pre {
+  font-size: large;
+}
+
+.hover {
+  border-bottom: 0.1875em solid #1B5E20;
+  background-color: #4CAF50;
+  color: #fff;
+  display: inline-block;
+  padding: 0.6em 2em;
+  margin: 0 0 1em;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.hover:active {
+  border-bottom-color: transparent;
+  transform: translateY(0.10em);
+}

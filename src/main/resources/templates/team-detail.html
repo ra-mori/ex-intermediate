@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./css/team.css" th:href="@{/css/team.css}">
+</head>
+<body>
+    <form action="team-list.html" th:action="@{/ex01/showList}">
+        <div th:object="${team}">
+            <!-- teamName -->
+            <div>
+                <p class="heading">球団名</p>
+                <p th:text="*{teamName}" class="paragraph"></p>
+            </div>
+            <!-- headQuarters -->
+            <div>
+                <p class="heading">本拠地</p>
+                <p class="paragraph" th:text="*{headQuarters}">本拠地名</p>
+            </div>
+            <!-- inauguration -->
+            <div>
+                <p class="heading">発足</p>
+                <p class="paragraph" th:text="*{inauguration}">発足日</p>
+            </div>
+            <!-- history -->
+            <div>
+                <p class="heading">歴史</p>
+                <pre class="paragraph" th:text="*{history}">本拠地名</pre>
+            </div>
+        </div>
+
+        <button class="hover">&nbsp; 戻る &nbsp;</button>
+    </form>
+</body>
+</html>
