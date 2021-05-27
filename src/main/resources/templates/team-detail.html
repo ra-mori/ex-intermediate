@@ -8,7 +8,6 @@
     <link rel="stylesheet" type="text/css" href="./css/team.css" th:href="@{/css/team.css}">
 </head>
 <body>
-    <form action="team-list.html" th:action="@{/ex01/showList}">
         <div th:object="${team}">
             <!-- teamName -->
             <div>
@@ -31,7 +30,8 @@
                 <pre class="paragraph" th:text="*{history}">本拠地名</pre>
             </div>
         </div>
-
+        
+	 <form action="team-list.html" th:action="@{/ex01/showList}">
         <button class="hover">&nbsp; 戻る &nbsp;</button>
     </form>
 </body>

@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+#price {
+    margin-right: 10px;
+}
+
+.error {
+    color: red;
+}
+
+.tablelist {
+    margin: 25px auto;
+    
+}

@@ -10,9 +10,13 @@
 <body>
     <h1>野球チーム一覧</h1>
     <div th:each="team:${teamList}" th:object="${team}" class="teamlist">
-        <a href="team-detail.html" th:href="@{/ex01/showDetail?id=} + *{id}">
-            <li th:text="*{teamName}">球団名</li>
-        </a>
+	    <ul>
+	    	<li th:text="*{teamName}">
+	            <a href="team-detail.html" th:href="@{/ex01/showDetail?id=} + *{id}">
+	           		 球団名 
+	            </a>
+            </li>
+	    </ul>
     </div>
 </body>
 </html>
